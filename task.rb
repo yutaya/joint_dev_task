@@ -68,7 +68,7 @@ def q8
 
   # 以下に回答を記載
   programming_languages.map!(&:capitalize)
-  upper_case_programming_languages = programming_languages.map{|a|a.upcase}
+  upper_case_programming_languages = programming_languages.map(&:upcase)
   # 以下は変更しないで下さい
   p programming_languages
   p upper_case_programming_languages
